@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de GEOAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/mini-logo.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido al Curso de GEOAI</h1>
+        <p>Explorando la Inteligencia Artificial en la Geografía</p>
+    </header>
+
+    <!-- Menú Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="loadContent('inicio.html')"><img src="images/logo.png" alt="Logo"
+                    height="40"> GEOAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadContent('inicio.html')">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadContent('acerca.html')">Acerca de</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"
+                            onclick="loadContent('software.html')">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"
+                            onclick="loadContent('osgeolabud.html')">OSGeoLABUD</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú Lateral -->
+            <aside class="col-md-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#" onclick="loadContent('introduccion.html')">Introducción a la AI</a>
+                    <a class="nav-link" href="#" onclick="loadContent('geoai.html')">GeoAI</a>
+                    <a class="nav-link" href="#" onclick="loadContent('optimizacion.html')">Principios de
+                        Optimización</a>
+                    <a class="nav-link" href="#" onclick="loadContent('aprendizaje.html')">Aprendizaje de Máquina</a>
+                    <a class="nav-link" href="#" onclick="loadContent('ai_generativa.html')">AI Generativa</a>
+                    <a class="nav-link" href="#" onclick="loadContent('redes_neuronales.html')">Redes Neuronales
+                        Artificiales</a>
+                    <a class="nav-link" href="#" onclick="loadContent('clasificacion.html')">Aplicaciones de
+                        Clasificación</a>
+                    <a class="nav-link" href="#" onclick="loadContent('regresion.html')">Aplicaciones de Regresión</a>
+                    <a class="nav-link" href="#" onclick="loadContent('clustering.html')">Aplicaciones de Clustering</a>
+
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#casosEstudioSubMenu"
+                        data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="casosEstudioSubMenu">
+                        Casos de Estudio
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <nav class="nav flex-column collapse ms-3" id="casosEstudioSubMenu">
+                        <a class="nav-link" href="#" onclick="loadContent('clasificacion_uso_suelo.html')">Clasificación
+                            del Uso del Suelo</a>
+                        <a class="nav-link" href="#" onclick="loadContent('crecimiento_urbano.html')">Predicción del
+                            Crecimiento Urbano</a>
+                        <a class="nav-link" href="#" onclick="loadContent('deteccion_edificios.html')">Detección y Mapeo
+                            de Edificios</a>
+                        <a class="nav-link" href="#" onclick="loadContent('riesgo_inundaciones.html')">Evaluación del
+                            Riesgo de Inundaciones</a>
+                        <a class="nav-link" href="#" onclick="loadContent('danos_terremotos.html')">Evaluación de Daños
+                            por Terremotos</a>
+                        <a class="nav-link" href="#" onclick="loadContent('humedad_suelo.html')">Estimación de Humedad
+                            del Suelo</a>
+                        <a class="nav-link" href="#" onclick="loadContent('patrones_trafico.html')">Análisis de Patrones
+                            de Tráfico</a>
+                        <a class="nav-link" href="#" onclick="loadContent('isla_calor.html')">Análisis del Efecto de
+                            Isla de Calor</a>
+                        <a class="nav-link" href="#" onclick="loadContent('calidad_aire.html')">Monitoreo de Calidad del
+                            Aire</a>
+                        <a class="nav-link" href="#" onclick="loadContent('deslizamientos_tierra.html')">Detección y
+                            Predicción de Deslizamientos de Tierra</a>
+                        <a class="nav-link" href="#" onclick="loadContent('cobertura_forestal.html')">Detección de
+                            Cambios en la Cobertura Forestal</a>
+                        <a class="nav-link" href="#" onclick="loadContent('calidad_agua.html')">Monitoreo de Calidad del
+                            Agua</a>
+                        <a class="nav-link" href="#" onclick="loadContent('erosion_costera.html')">Monitoreo de la
+                            Erosión Costera</a>
+                        <a class="nav-link" href="#" onclick="loadContent('salud_infraestructuras.html')">Monitoreo de
+                            la Salud de Infraestructuras</a>
+                        <a class="nav-link" href="#" onclick="loadContent('avaluos_inmobiliarios.html')">Avalúos
+                            Inmobiliarios</a>
+                    </nav>
+                </nav>
+            </aside>
+
+
+            <!-- Contenido Dinámico -->
+            <main class="col-md-9" id="content">
+                <!-- Aquí se cargará el contenido -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <img src="images/creative-commons.png" alt="Creative Commons">
+            2024 Semillero de Investigación OSGeoLABUD - Director del proyecto Paulo César Coronado Sánchez
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
